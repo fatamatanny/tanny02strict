@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #f9f9f9;
+}
+
+.header_wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 30%;
+}
+
+nav{
+    width: 50%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li{
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2d3950;
+}
+
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner_content h1{
+    color: #fff; 
+    font-size: 70px;
+}
+
+.banner_content span{
+    display: block;
+    width: 510px;
+    height: 2px;
+    background: #15a4fa; 
+    margin: 15px 0px;
+}
+
+.banner_content p{
+    color: #fff; 
+    font-size: 19px;
+}
+
+.banner_content button{
+    background: transparent;
+    border: 1px solid #15a4fa;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 35px; 
+    font-family: 'Lato', sans-serif;
+}
+
+.banner_content button:hover{
+    background-color: #15a4fa;
+    transition: .4s all ease-in-out;
+}
+
+.about_wrap{
+    background: rgb(246, 249, 249);
+}
+
+.about{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 65px 0px;
+}
+
+.about h2{
+    color: rgb(45, 57, 80);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.about p{
+    color: rgb(153, 153, 153);
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.feature{
+
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.feature-wrap{
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /*! padding: 15px; */
+    width: 80%;
+}
+.feature-item{
+
+    width: 30%;
+    margin: auto;
+}
+.feature-icon{
+
+    background: red;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    display: flex;
+    /*! justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+}
+.feature h3{
+
+    /*! margin: auto; */
+    text-align: center;
+    margin-bottom: 15px;
+}
+.feature p{
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.work-section{
+
+    background-color: #f9f9f9;
+    padding: 70px 0;
+}
+.work{
+
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.work-item{
+
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.work-item img{
+
+    width: 100%;
+    display: block;
+}
+
+.heading{
+
+    text-align: center;
+    margin-bottom: 70px;
+}
+.heading h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+
+
+}
+.heading p{
+    font-size: 24px;
+    margin-bottom: 15px;
+
+
+}
+.work-item::after{
+    left: 0;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(204, 73, 32);
+    opacity: 0;
+    transition: .5s ease-in-out;
+
+}
+.work-item:hover::after{
+    opacity: .5;
+}
+.contact-section{
+    background-image: url(../images/Strict-7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+   
+}
+.contact-form{
+
+    width: 40%;
+    margin: auto;
+}
+.contact-form h1{
+
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+}
+.contact-form p{
+
+    color: #676b75;
+    text-align: center;
+    margin-top: 5px;
+}
+.contact-form form input{
+
+    width: 95%;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.contact-form form textarea{
+
+    width: 95%;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.contact-form form input[type="submit"]{
+
+
+    width: auto;
+    padding: 0;
+    line-height: 0;
+    color: #fff;
+    padding: 12px 25px;
+    border: 1px solid #2196f3;
+   margin-right: 8px;
+}
+.checkbox-part{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkbox{
+
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+.checkbox input{
+
+}
+.checkbox p{
+    margin: auto
+
+}
+.contact-form form input[type="checkbox"]{
+    
+
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+.contact-form form{
+    margin-top: 50px;
+}
+.contact-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1218c1;
+    opacity: .5;
+    z-index: -1;
+}
+footer{
+
+    background: #f9f9f9;
+    padding: 30px 0;
+}
+.footer_content{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.term{
+
+    width: 30%;
+  
+}
+.term ul{
+   
+    list-style: none;
+    display: flex;
+}
+.term ul li{
+
+    margin-right: 15px;
+}
+.term ul li a{
+
+    text-decoration: none;
+    color: #bebfbf;
+}
+.icon{
+
+    width: 30%;
+}
+.icon ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    
+}
+.icon ul li{
+
+    
+    margin-left: 15px;
+}
+.icon ul li a{
+
+    text-decoration: none;
+    color: #15a4fa;
+}
